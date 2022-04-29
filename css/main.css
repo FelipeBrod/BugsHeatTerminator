@@ -12,16 +12,16 @@ body {
 }
 
 .navbar {
-  background: white;
+  background: rgba(255, 123, 0, 0.07);
   padding: 1em;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
-  transition: 500ms
-
+  transition: 500ms;
+  
 }
 .scrolled {
-  background: rgba(255, 123, 0, 0.5);
-  font-size: 1.0em;
-  transition: 500ms
+  background: white;
+  transition: 500ms;
+
 }
 
 .navbar .logo {
@@ -29,15 +29,17 @@ body {
   font-weight: bold;
   color: black;
   position: relative;
-  width: 20%;
-  left:15px;
+  width: 15%;
   background-size: contain;
+}
+
+.logo{
+  transform: scale(1);
 }
 
 .navbar nav {
   display: none;
   position: fixed;
-  top:0;
 }
 
 .navbar .container {
@@ -119,38 +121,45 @@ section {
 .primary-cta img{
   position: relative;
   margin-right: 0.4em;
-  top: 0.2em;
 }
 
 .mail-cta img {
   position: relative;
-  margin-right: 0.4em;
-  top: 0.45em;
+  margin-right: 0.5em;
+  top: 0.5em;
 }
 
 .mail-cta a{
+  font-size: 1.2em;
+}
+
+.mail-cta a:hover{
   position: relative;
   font-size: 1.2em;
-  
-
 }
 .mail-cta::before {
-  transform: scaleX(0);
+  transform-origin: left;
+  transform: scaleX(1);
 }
 
 .mail-cta:hover::before{
   transform: scaleX(1);
+
 }
 .mail-cta::before {
-  content: " ";
-  display: block;
+  content: '';
   position: absolute;
-  top: 0; right: 0; bottom: 0; left: 0;
-  inset: 0 0 0 0;
-  background: rgba(255, 123, 0, 0.5);
-  transition: transform .3s ease;
-  
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  background-color: var(--primary-color);
+  bottom: 0;
+  left: 0;
+  transform-origin: bottom;
+  transform: scaleX(0);
+  transition: transform .3s ease-in-out;
 }
+
 
 section.features-section {
   background: #20272E;
@@ -219,9 +228,7 @@ ul.features-list li:before {
   transition: 300ms;
   color: white;
 }
-.float {
-  transform: scale(0.8);
-}
+
 
 .float {
   position: fixed;
@@ -238,9 +245,34 @@ ul.features-list li:before {
   transition-duration: 0.25s;
   margin-right: 1rem;
   z-index: 2;
+  transform: scale(0.8);
 }
 .float:hover {
   transform: scale(1.1);
+  box-shadow: 6px 6px 8px #999;
+
+}
+
+.float-sms {
+  position: fixed;
+  width: 5rem;
+  height: 5rem;
+  bottom: 8rem;
+  right: 2rem;
+  background-color: #257fd3;
+  color: #fff;
+  border-radius: 5rem;
+  text-align: center;
+  font-size: 3.2rem;
+  box-shadow: 2px 2px 3px #999;
+  transition-duration: 0.25s;
+  margin-right: 1rem;
+  z-index: 2;
+  transform: scale(0.8);
+  }
+
+.float-sms:hover {
+  transform: scale(1.0);
   box-shadow: 6px 6px 8px #999;
 
 }
@@ -327,16 +359,22 @@ nav li a:hover {
   .mobile-menu, .mobile-menu-exit {
     display: none;
   }
-  .navbar .container {
+  .navbar .logo .container {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 190px auto;
-       grid-template-columns: 190px auto;
+    grid-template-columns: 190px auto;
     -webkit-box-pack: unset;
-         -ms-flex-pack: unset;
-           justify-content: unset;
-    
+    -ms-flex-pack: unset;
+    justify-content: unset;
+           
   }
+
+  .logo{
+    position: relative;
+    bottom: 1em;
+  }
+
   .navbar nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -348,7 +386,6 @@ nav li a:hover {
     position: unset;
     height: auto;
     width: 100%;
-    padding: 0;
   }
   .navbar nav ul {
     display: -webkit-box;
@@ -357,8 +394,8 @@ nav li a:hover {
   }
   .navbar nav a {
     color: black;
-    font-size: 1.5em;
-    padding: 0.5em 1em;
+    font-size: 2em;
+    /* padding: 1em 1em; */
   }
   .navbar nav ul.primary-nav {
     margin: 0;
@@ -411,8 +448,6 @@ nav li a:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-
-    
   }
   .primary-cta {
     margin-right: 1em;
