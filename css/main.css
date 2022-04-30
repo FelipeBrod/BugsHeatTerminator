@@ -34,8 +34,10 @@ body {
 }
 
 .logo{
-  transform: scale(1);
+  padding-top: 0.5em;
+  transform: scale(1.5);
 }
+
 
 .navbar nav {
   display: none;
@@ -52,6 +54,7 @@ body {
 
 .navbar .mobile-menu {
   cursor: pointer;
+  transform: scale(1.6);
 }
 
 a {
@@ -188,8 +191,8 @@ ul.features-list li:before {
   position: absolute;
   width: 20px;
   height: 20px;
-  background-image: url("../images/bullet.svg");
-  background-size: contain;
+  /* background-image: url("../images/bullet.svg");
+  background-size: contain; */
   margin-right: .5em;
 }
 
@@ -199,6 +202,7 @@ ul.features-list li:before {
 
 .testimonials-section {
   background: var(--primary-color);
+
   color:  #20272E;
   
 }
@@ -235,7 +239,7 @@ ul.features-list li:before {
   width: 5rem;
   height: 5rem;
   bottom: 2rem;
-  right: 2rem;
+  right: 0.5rem;
   background-color: #25d365;
   color: #fff;
   border-radius: 5rem;
@@ -243,7 +247,7 @@ ul.features-list li:before {
   font-size: 3.2rem;
   box-shadow: 2px 2px 3px #999;
   transition-duration: 0.25s;
-  margin-right: 1rem;
+  margin-right: .5rem;
   z-index: 2;
   transform: scale(0.8);
 }
@@ -258,7 +262,7 @@ ul.features-list li:before {
   width: 5rem;
   height: 5rem;
   bottom: 8rem;
-  right: 2rem;
+  right: 0.5rem;
   background-color: #257fd3;
   color: #fff;
   border-radius: 5rem;
@@ -266,7 +270,7 @@ ul.features-list li:before {
   font-size: 3.2rem;
   box-shadow: 2px 2px 3px #999;
   transition-duration: 0.25s;
-  margin-right: 1rem;
+  margin-right: .5rem;
   z-index: 2;
   transform: scale(0.8);
   }
@@ -420,6 +424,7 @@ nav li a:hover {
   .container {
     width: 1080px;
     margin: 0 auto;
+
   }
   section {
     padding: 10em 4em;
@@ -432,6 +437,7 @@ nav li a:hover {
         -ms-flex-pack: justify;
             justify-content: space-between;
     text-align: left;
+
   }
   .hero .container .left-col {
     margin: 3em 3em 0 5em;
@@ -439,6 +445,7 @@ nav li a:hover {
   .hero .container .left-col h1 {
     font-size: 3em;
     width: 90%;
+    
   }
   .hero-img {
     width: 30%;
@@ -457,7 +464,7 @@ nav li a:hover {
     margin-left: 5em;
   }
   ul.features-list li {
-    font-size: 1.4em;
+    font-size: 1.8em;
   }
   ul.features-list li:before {
     width: 30px;
@@ -471,7 +478,7 @@ nav li a:hover {
     position: absolute;
     right: 0;
     width: 350px;
-    bottom: -2em;
+    /* bottom: -2em; */
   }
   .testimonials-section ul {
     display: -webkit-box;
@@ -489,6 +496,7 @@ nav li a:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    
   }
   .contact-right {
     position: absolute;
