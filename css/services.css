@@ -6,6 +6,8 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 
   }
   .services-section {
@@ -48,7 +50,7 @@
     line-height: 1.6;
     letter-spacing: 0.03em;
   }
-
+  
   .icon-wrapper {
     background-color:var(--primary-color);
     position: relative;
@@ -63,7 +65,8 @@
     transition: 0.35s;
   }
   .card:hover {
-    background: var(--primary-color)
+    background: var(--primary-color);
+    transform: scale(1.05);
   }
   .card:hover .icon-wrapper {
     background-color: #ffffff;
@@ -75,14 +78,14 @@
   .card:hover p {
     color: #f0f0f0;
   }
-
+  
   .card:hover .filter-black{
     filter: invert(48%) sepia(86%) saturate(462%) hue-rotate(345deg) brightness(92%) contrast(88%);
     transition: .35s
   }
   @media screen and (min-width: 768px) {
     section {
-      padding: 0 0em;
+      padding: 2em;
     }
     .column{
       flex: 0 50%;
