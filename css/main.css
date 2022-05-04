@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 :root {
   --primary-color: #d67529;
+  scroll-behavior: smooth;
 
 }
 
@@ -200,17 +201,17 @@ ul.features-list li:before {
   display: none;
 }
 
-.testimonials-section {
+.card-section {
   background: var(--primary-color);
 
   color:  #20272E;
   
 }
-.testimonials-section a{
+.card-section a{
   text-decoration: none;
 }
 
-.testimonials-section li {
+.card-section li {
   background: white;
   text-align: center;
   padding: 2em 1em ;
@@ -220,14 +221,14 @@ ul.features-list li:before {
   box-shadow: 0 10px 16px 0 rgba(0,0,0,0.4);
 }
 
-.testimonials-section li img {
+.card-section li img {
   width: 5em;
   height: 5em;
   border: 5px solid var(--primary-color);
   border-radius: 50%;
   margin-top: -4.5em;
 }
-.testimonials-section li:hover{
+.card-section li:hover{
   background: #ffffff61;
   transition: 300ms;
   color: white;
@@ -359,11 +360,48 @@ nav li a:hover {
   cursor: pointer;
 }
 
+
+.contact-left-card  i{
+  padding-right: 0.8em;
+}
+
+.contact-left-card li {
+background: white;
+text-align: left;
+padding: 1em;
+width: 80%;
+margin: 0;
+border-radius: 1em;
+box-shadow: 0 10px 16px 0 rgba(0,0,0,0.4);
+} 
+
+.contact-left-card a {
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 1.3em;
+  padding: .8em 1em;
+  text-decoration: none;
+}
+
+
+.contact-left-card li:hover{
+background: #d67429b7;
+transition: 0.25s;
+color:#ffffff;
+cursor: pointer;
+}
+
+.contact-left-card li a:hover {
+  color:#ffffff;
+}
+
+
+
 @media only screen and (min-width: 768px) {
   .mobile-menu, .mobile-menu-exit {
     display: none;
   }
-  .navbar .logo .container {
+  .navbar .logo .container .contact-section {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 190px auto;
@@ -373,6 +411,8 @@ nav li a:hover {
     justify-content: unset;
            
   }
+
+
 
   .logo{
     position: relative;
@@ -418,8 +458,9 @@ nav li a:hover {
     background: var(--primary-color);
     color: white;
   }
-}
+ 
 
+  
 @media only screen and (min-width: 1080px) {
   .container {
     width: 1080px;
@@ -427,7 +468,7 @@ nav li a:hover {
 
   }
   section {
-    padding: 10em 4em;
+    padding: 6em 4em;
   }
   .hero .container {
     display: -webkit-box;
@@ -480,17 +521,18 @@ nav li a:hover {
     width: 350px;
     /* bottom: -2em; */
   }
-  .testimonials-section ul {
+  .card-section ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     
   }
-  .testimonials-section ul li {
+  .card-section ul li {
     margin: 0 1em;
   }
   .contact-section {
     position: relative;
+    
   }
   .contact-section .container {
     display: -webkit-box;
@@ -502,14 +544,15 @@ nav li a:hover {
     position: absolute;
     right: 0;
     top: 0;
-    width: 45%;
+    width: 50%;
     height: 100%;
   }
   .contact-right iframe {
     height: 100%;
   }
-}
 
+
+}
 @media only screen and (min-width: 1450px) {
   .features-section:before {
     content: '';
@@ -529,5 +572,6 @@ nav li a:hover {
     left: 4.5em;
     top: 2em;
   }
+}
 }
 /*# sourceMappingURL=main.css.map */

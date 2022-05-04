@@ -1,0 +1,75 @@
+<head>
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bugs Heat Terminator</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="https://kit.fontawesome.com/b01a0910b5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="mainNavbar" class="navbar" >
+        <div class="container">
+            <a class="logo" href="/"><img src="/images/logo.svg" alt="Bugs Heat Terminators"></a>
+            <img id="mobile-cta" class="mobile-menu" src="/images/menu.svg" alt="Open Navigation">
+            
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="../images/exit.svg" alt="Close Navigation">
+                <ul class="primary-nav">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/services">Services</a></li>
+                    
+                </ul>
+
+                <ul class="secondary-nav">
+                    <li><a href="#contact">Contact</a></li>
+                    <li class="go-premium-cta"><a href="/commercial">Commercial</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- WhatsApp -->
+
+    <a
+      href="https://api.whatsapp.com/send?phone=1416560-4827&text=%20From%20the%20website:%20"
+      class="float"
+      target="_blank"
+    >
+    <i class="fa-brands fa-whatsapp"></i>
+
+    </a>
+    <!-- end whatsApp -->
+    <a href="sms:14169971918"
+      class="float-sms"
+      target="_blank"
+    >
+    <i class="fas fa-sms"></i>
+    </a>
+    <!-- end SMS -->
+
+    <script>
+        window.onscroll = function () {
+            if (
+              document.body.scrollTop >= 50 ||
+              document.documentElement.scrollTop >= 50
+            ) {
+              document.getElementById('mainNavbar').classList.add('scrolled');
+            } else {
+              document.getElementById('mainNavbar').classList.remove('scrolled');
+            }
+        }
+        
+        const mobileBtn = document.getElementById('mobile-cta')
+              nav = document.querySelector('nav')
+              mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+        
+      
