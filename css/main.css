@@ -35,8 +35,7 @@ body {
 }
 
 .logo{
-  padding-top: 0.5em;
-  transform: scale(1.5);
+  padding-top: 2em;
 }
 
 
@@ -212,6 +211,7 @@ ul.features-list li:before {
 }
 .card-section a{
   text-decoration: none;
+  padding-top: 1.5em;
 }
 
 .card-section li {
@@ -222,6 +222,7 @@ ul.features-list li:before {
   margin: 0 auto 5em auto;
   border-radius: 1em;
   box-shadow: 0 10px 16px 0 rgba(0,0,0,0.4);
+  
 }
 
 .card-section li img {
@@ -235,6 +236,7 @@ ul.features-list li:before {
   background: #ffffff61;
   transition: 300ms;
   color: white;
+  transform: scale(1.05)
 }
 
 
@@ -310,10 +312,10 @@ nav.menu-btn {
 nav {
   position: fixed;
   z-index: 999;
-  width: 66%;
+  width: 45%;
   right: 0;
   top: 0;
-  background: #20272E;
+  background: #d67429f1;
   height: 100vh;
   padding: 1em;
 }
@@ -362,6 +364,7 @@ box-shadow: 0 10px 16px 0 rgba(0,0,0,0.4);
   font-size: 1.2em;
   padding: .8em 1em;
   text-decoration: none;
+  
 }
 
 
@@ -369,11 +372,13 @@ box-shadow: 0 10px 16px 0 rgba(0,0,0,0.4);
 background: #d67429b7;
 transition: 0.25s;
 color:#ffffff;
+transform: scale(1.05);
 cursor: pointer;
 }
 
 .contact-left-card li a:hover {
   color:#ffffff;
+
 }
 
 
@@ -396,6 +401,8 @@ cursor: pointer;
   .logo{
     position: relative;
     bottom: 1em;
+    right: 5em;
+    color: #d67529;
   }
 
   .navbar nav {
@@ -406,7 +413,7 @@ cursor: pointer;
         -ms-flex-pack: justify;
           justify-content: space-between;
     background: none;
-    position: unset;
+    position: relative;
     height: auto;
     width: 100%;
   }
@@ -414,11 +421,12 @@ cursor: pointer;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+
   }
   .navbar nav a {
     color: black;
     font-size: 2em;
-    /* padding: 1em 1em; */
+    padding: 1em 1em;
   }
   .navbar nav ul.primary-nav {
     margin: 0;
@@ -504,6 +512,7 @@ cursor: pointer;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: 100%;
     
   }
   .card-section ul li {

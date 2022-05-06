@@ -10,6 +10,22 @@
         });
         
  </script>
+
+ <link rel="stylesheet" href="https://cdn.rawgit.com/stevenmonson/googleReviews/master/google-places.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/stevenmonson/googleReviews@6e8f0d794393ec657dab69eb1421f3a60add23ef/google-places.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBuaUUFWjouwHDC8uuvrbd1jh3Lhm-NZSs&signed_in=true&libraries=places"></script>
+    
+    <script>
+        jQuery(document).ready(function( $ ) {
+           $("#google-reviews").googlePlaces({
+                placeId: 'ChIJb8FwF5AzK4gRkcaNjyX9_GA'
+              , render: ['reviews']
+              , min_rating: 4
+              , max_rows: 4
+           });
+        });
+        </script>
 </head>
 <body>
     <div id="nav-placeholder"></div>
@@ -51,38 +67,51 @@
 
     <section class="card-section">
         <div class="container">
+           
             <ul>
-                    <!-- <a href="/bedbugs"> -->
-                <a href="/bed-bugs/">
+                <a href="https://www.google.com/search?q=bugs+heat+termiantor&rlz=1C1UEAD_enCA980CA980&oq=bugs+heat+termiantor&aqs=chrome..69i57j46i13i175i199j0i22i30j0i10i22i30j0i22i30j0i390l2.3042j0j7&sourceid=chrome&ie=UTF-8#lrd=0x882b33901770c16f:0x60fcfd258f8dc691,1,,," 
+                target="_blank"
+                onclick="window.open('https://www.google.com/search?q=bugs+heat+termiantor&rlz=1C1UEAD_enCA980CA980&oq=bugs+heat+termiantor&aqs=chrome..69i57j46i13i175i199j0i22i30j0i10i22i30j0i22i30j0i390l2.3042j0j7&sourceid=chrome&ie=UTF-8#lrd=0x882b33901770c16f:0x60fcfd258f8dc691,1,,,')">
                 <li>
-                    <img src="images/bed_bug.svg" alt="Bed bugs">
-                    <blockquote>Our heating services implement direct fired heaters that raise temperatures to create a hostile and deadly environment to bed bugs.</blockquote>     
+                    <img src="https://lh3.googleusercontent.com/a/AATXAJwMoIf7Vb1mUJrp-H5QLj-x6XgE4WRxNyGVrPzm=w75-h75-p-rp-mo-br100" alt="Bed bugs">
+                    <blockquote>I highly recommend this company.  The entire crew was professional and helpful.  Maria in particular was excellent at coordinating things and explaining the process.</blockquote>
+                    <cite>Patrick L</cite>     
                 </li>
                 </a>
-                    <!-- <a href="/cockroach"> -->
-                <a href="/services/">
+                <a href="https://www.google.com/search?q=bugs+heat+termiantor&rlz=1C1UEAD_enCA980CA980&oq=bugs+heat+termiantor&aqs=chrome..69i57j46i13i175i199j0i22i30j0i10i22i30j0i22i30j0i390l2.3042j0j7&sourceid=chrome&ie=UTF-8#lrd=0x882b33901770c16f:0x60fcfd258f8dc691,1,,," 
+                target="_blank" 
+                onclick="window.open('https://www.google.com/search?q=bugs+heat+termiantor&rlz=1C1UEAD_enCA980CA980&oq=bugs+heat+termiantor&aqs=chrome..69i57j46i13i175i199j0i22i30j0i10i22i30j0i22i30j0i390l2.3042j0j7&sourceid=chrome&ie=UTF-8#lrd=0x882b33901770c16f:0x60fcfd258f8dc691,1,,,'); return false;">
                 <li>
-                    <img src="images/cockroach.svg" alt="Cockroach">   
-                    <blockquote>Cockroaches are a difficult pest to eliminate, especially when they seem to multiply to no end. No worries, Bugs Terminator also has effective ways to eliminate your cockroach problem.</blockquote>
+                    <img src="https://lh3.googleusercontent.com/a-/AOh14GjXYmvD_lCLjRN7l0ns2nknEcAIKsbXnTat8w3I8bU=w75-h75-p-rp-mo-br100" alt="Cockroach">   
+                    <blockquote>I did careful research before I chose this company.  Their heat and spray treatments were very effective, they were very timely when scheduling appointments, and Maria is very professional, responsive and organized.  She was amazing to work with and this company is highly recommended!</blockquote>
+                    <cite>Agnes Leung</cite>
                 </li>
                 </a>
-                    <!-- <a href="/mice"> -->
-                <a href="/services/">
+
+                <a href="https://www.google.com/search?q=bugs+heat+termiantor&rlz=1C1UEAD_enCA980CA980&oq=bugs+heat+termiantor&aqs=chrome..69i57j46i13i175i199j0i22i30j0i10i22i30j0i22i30j0i390l2.3042j0j7&sourceid=chrome&ie=UTF-8#lrd=0x882b33901770c16f:0x60fcfd258f8dc691,1,,," 
+                target="_blank"
+                onclick="window.open('https://www.google.com/search?q=bugs+heat+termiantor&rlz=1C1UEAD_enCA980CA980&oq=bugs+heat+termiantor&aqs=chrome..69i57j46i13i175i199j0i22i30j0i10i22i30j0i22i30j0i390l2.3042j0j7&sourceid=chrome&ie=UTF-8#lrd=0x882b33901770c16f:0x60fcfd258f8dc691,1,,,')">
                 <li>
-                    <img src="images/mice-rat-silhouette.svg" alt="Mice">    
-                    <blockquote>Mice and rodents could infest your home without being noticed until it's too late. We use the latest technique to eradicate the pest from your home.</blockquote>
+                    <img src="https://lh3.googleusercontent.com/a-/AOh14Gha-g0jnOEnZOxHECzRA353B6wf72nBl-txfaEUDeQ=w75-h75-p-rp-mo-br100" alt="Mice">    
+                    <blockquote>Maria and Marco performed a thorough inspection and even though (thankfully) no evidence of bedbugs were found, they made some good recommendations for preventative measures just in case. Highly recommend this company!!</blockquote>
+                    <cite>Hal Mehr</cite>
                 </li>
                 </a>
-                    <!-- <a href="/birds"> -->
-                <a href="/services/">
-                <li>
-                    <img src="images/bird_seagull.svg" alt="Bird, pigeon, seagull">
-                    <blockquote>Bird Control; using bird spikes, bird netting, bird spiders, and bird wire, we have experience in installing and providing service guaranteeing our products up to 10 years!</blockquote>
-                </li>
+                <a href="https://www.google.com/search?q=bugs+heat+termiantor&rlz=1C1UEAD_enCA980CA980&oq=bugs+heat+termiantor&aqs=chrome..69i57j46i13i175i199j0i22i30j0i10i22i30j0i22i30j0i390l2.3042j0j7&sourceid=chrome&ie=UTF-8#lrd=0x882b33901770c16f:0x60fcfd258f8dc691,1,,," 
+                target="_blank"
+                onclick="window.open('https://www.google.com/search?q=bugs+heat+termiantor&rlz=1C1UEAD_enCA980CA980&oq=bugs+heat+termiantor&aqs=chrome..69i57j46i13i175i199j0i22i30j0i10i22i30j0i22i30j0i390l2.3042j0j7&sourceid=chrome&ie=UTF-8#lrd=0x882b33901770c16f:0x60fcfd258f8dc691,1,,,',); return false;">
+                    <li>
+                        <img src="https://lh3.googleusercontent.com/a-/AOh14GjqSsKLvd9kPMAdlOg8M1BNrZDpLChDpZcZQzWi=w75-h75-p-rp-mo-br100" alt="Mice">    
+                        <blockquote>My roommate and I realized we had bed bugs one evening! We called this company and they arrived within 30 minutes to come check it out! The next day they applied the heat treatment and spray! Great customer service, quick response and very nice people!! Would recommend to anyone!</blockquote>
+                        <cite>Brittany Yard</cite>
+                    </li>
                 </a>
             </ul>
+        </a>
         </div>
     </section>
+
+    
 <section>
 <div id="contact-placeholder"></div>
 </section>   
