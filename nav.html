@@ -1,10 +1,10 @@
 <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bugs Heat Terminator</title>
-    <link rel="stylesheet" href="/css/main.css">
     <script src="https://kit.fontawesome.com/b01a0910b5.js" crossorigin="anonymous"></script>
+    <link  type="text/css" crossorigin="anonymous" rel="preload" as="style"  onload="this.rel='stylesheet'" href="/css/main.css">
 </head>
 <body>
     <div id="mainNavbar" class="navbar" >
@@ -13,7 +13,7 @@
           <img id="mobile-cta" class="mobile-menu" src="/images/menu.svg" alt="Open Navigation">
           
           <nav>
-            <img id="mobile-exit" class="mobile-menu-exit" src="../images/exit.svg" alt="Close Navigation">
+            <img id="mobile-exit" class="mobile-menu-exit" src="/images/exit.svg" alt="Close Navigation">
             <ul class="primary-nav">
                     <li><a href="/">Home</a></li>
                     <li><a href="/services">Services</a></li>
@@ -47,18 +47,7 @@
     </a>
     <!-- end SMS -->
 
-    <script>
-        window.onscroll = function () {
-            if (
-              document.body.scrollTop >= 50 ||
-              document.documentElement.scrollTop >= 50
-            ) {
-              document.getElementById('mainNavbar').classList.add('scrolled');
-            } else {
-              document.getElementById('mainNavbar').classList.remove('scrolled');
-            }
-        }
-        
+    <script>        
         const mobileBtn = document.getElementById('mobile-cta')
               nav = document.querySelector('nav')
               mobileBtnExit = document.getElementById('mobile-exit');
@@ -70,5 +59,5 @@
         mobileBtnExit.addEventListener('click', () => {
             nav.classList.remove('menu-btn');
         })
-        
+  </script>
       

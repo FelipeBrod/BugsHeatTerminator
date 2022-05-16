@@ -1,25 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="../css/services.css">
-  
+  <link rel="stylesheet" href="./css/services.css">
   <link rel="icon" type="image/x-icon" href="/images/favicon.svg">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script>
       $(function(){
         $("#nav-placeholder").load("../nav.html");
-        $("#contact-placeholder").load("../contact.html")
+        $("#contact-placeholder").load("../contact/contact.html")
+        $("#fixed-phone").load("../footer.html")
       });
-
-    </script>
-  </head>
+  </script>
+</head>
   
   
 <body>
     <div id="nav-placeholder"></div>
     <section>
       <div class="row">
-        <h2 class="section-heading">Our Services</h2>
+        <h2 class="section-heading">Our Services:</h2>
       </div>
       <div class="row">
         <div class="column">
@@ -91,11 +90,12 @@
       </div>
     </section>
     
-    <section>
-      <div class="container">
+    <section class="contact-section">
+      <div class="contact">
         <div id="contact-placeholder"></div>
       </div>
     </section>
 </body>
+<div id="fixed-phone"></div>
 
 </html>

@@ -1,0 +1,163 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.services{
+  background-color:#444444;
+  color: #fefefe;
+}
+
+.navbar{
+  background-color: #444444;
+  box-shadow: 2px 2px 2px 1px rgba(255, 255, 255, 0.2), 0.2;
+}
+.navbar a{
+  color: #fff !important;
+}
+
+p{
+  color: #ffffff !important;
+}
+
+.comm-clients{
+  background: linear-gradient(to left, transparent, #1a1a1a), url("../../images/technitian-bthlogo.jpg") var(--primary-color);
+}
+.hotels{
+  background: linear-gradient(to left, transparent, #1a1a1a), url("../../images/hotel.jpg") var(--primary-color);
+}
+.restaurant{
+  background: linear-gradient(to left, transparent, #1a1a1a), url("../../images/restaurant.jpg") var(--primary-color);
+}
+.building{
+  background: linear-gradient(to left, transparent, #1a1a1a), url("../../images/building.png") var(--primary-color);
+}
+.section-heading{
+  padding: 0 0 2em 0.5em;
+}
+.services-section {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  place-items: flex;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.column {
+  width: 100%;
+  height: 25em;
+  text-align: center;
+  padding-bottom: 1em;
+}
+
+.column h3{
+  font-size:3em;
+}
+
+.card {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 1em;
+  background-position: center;
+  background-size: cover;
+  border-radius: 1em;
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+h3 {
+  font-size: 4em;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 1em 0;
+  text-align: left;
+  transition: 0.5s;
+}
+
+p {
+  color: #575a7b;
+  font-size: 1em;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  visibility:hidden;
+}
+
+.card:hover, .card:active{
+  transition: 0.35s;
+  background: var(--primary-color);
+  transform: scale(1.06);
+}
+
+.card:hover h3{
+  font-size: 2em;
+  transition: 0.5s;
+}
+.card:active h3{
+  font-size: 1em;
+}
+
+.card:active p {
+  color: #f0f0f0;
+  visibility: hidden;
+}
+
+
+/* contact */
+.contact h2{
+  color: #f0f0f0 !important;
+}
+
+.contact li{
+  width: 100% !important;
+}
+
+.contact{
+  padding-left: 2em;
+  background: var(--primary-color) 30%;
+  padding: 2em 5em 2em 2em;
+}
+
+.contact-section{
+  width: 100% !important;
+  padding: 0;
+}
+
+
+
+@media screen and (min-width: 768px) {
+  section {
+    padding: 2em;
+  }
+  
+  .card:hover p{
+    visibility: visible;
+  }
+  
+  p{
+    font-size: 1.5em;
+  }
+  
+  .column {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+}
+
+@media screen and (min-width: 992px) {
+  section {
+    padding: 1em 2em;
+  }
+  .column {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 1.5em;
+  }
+}
